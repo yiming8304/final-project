@@ -22,5 +22,17 @@
     "date": "2026-06-15",
     "status": "active",
     "createdAt": "2026-06-15T20:38:55.219911"
+  },
+  {
+    "id": "1781527655168",
+    "studentId": "123456123456",
+    "name": "mina",
+    "seatId": "湖光-C1",
+    "area": "C区",
+    "campus": "湖光校区",
+    "timeSlot": "上午",
+    "date": "2026-06-15",
+    "status": "active",
+    "createdAt": "2026-06-15T20:47:35.168667"
   }
 ]

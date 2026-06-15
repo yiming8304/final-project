@@ -1,6 +1,7 @@
 import streamlit as st
 import json
 import os
+import time
 from datetime import datetime
 
 # ===================== 页面基础配置 =====================
@@ -364,6 +365,8 @@ elif select_menu == "🚪 退出登录" and st.session_state.login_status:
         st.session_state.selected_campus = None
         st.success("✅ 已退出登录")
         st.success("📚 今日学习辛苦啦，欢迎下次再来图书馆努力学习！")
+        st.balloons()
+        time.sleep(5)
         st.rerun()
 
 # 未登录拦截
