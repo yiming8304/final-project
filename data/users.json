@@ -3,5 +3,10 @@
     "studentId": "123412341234",
     "name": "1234",
     "campus": "寸金校区"
+  },
+  {
+    "studentId": "123456123456",
+    "name": "mina",
+    "campus": "寸金校区"
   }
 ]

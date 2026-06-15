@@ -169,7 +169,7 @@ elif select_menu == "🏠 首页" and st.session_state.login_status:
     4. 请合理使用图书馆资源，文明就座
     """)
 
-# 3. 座位预约（已修复 None.split 报错）
+# 3. 座位预约（已修复 None.split 报错，添加可视化）
 elif select_menu == "🪑 座位预约" and st.session_state.login_status:
     st.title("🪑 座位预约")
     st.divider()
@@ -197,27 +197,53 @@ elif select_menu == "🪑 座位预约" and st.session_state.login_status:
     
     # 筛选当前区域座位
     area_seats = [s for s in campus_seats if s["area"] == choose_area]
-    seat_id_list = [
-        f"{s['id']}（空闲）" if s["status"] == "available" 
-        else f"{s['id']}（已预约）" 
-        for s in area_seats
-    ]
-
-    # 空列表容错处理（核心修复）
-    choose_seat = None
-    if not seat_id_list:
-        st.selectbox("选择座位", ["暂无该区域座位可选"], disabled=True)
-        st.info("当前选择区域暂无座位，请更换其他区域！")
-    else:
-        choose_seat = st.selectbox("选择座位", seat_id_list)
     
-    # 安全截取座位ID
-    real_seat_id = None
-    if choose_seat is not None:
-        real_seat_id = choose_seat.split("（")[0]
+    # 可视化座位网格
+    st.subheader("座位选择（绿色可预约，灰色已预约）")
+    st.markdown("---")
+    
+    if not area_seats:
+        st.info("当前区域暂无座位，请更换其他区域！")
+        real_seat_id = None
+    else:
+        # 计算网格大小
+        max_row = max(s["row"] for s in area_seats)
+        max_col = max(s["col"] for s in area_seats)
+        
+        # 使用会话状态存储选中的座位
+        if "selected_seat" not in st.session_state:
+            st.session_state.selected_seat = None
+        
+        # 显示座位网格
+        for row in range(1, max_row + 1):
+            cols = st.columns(max_col)
+            for col in range(1, max_col + 1):
+                seat = next((s for s in area_seats if s["row"] == row and s["col"] == col), None)
+                if seat:
+                    is_available = seat["status"] == "available"
+                    seat_label = seat["id"].split("-")[1]  # 提取座位编号如 "A1"
+                    button_key = f"seat_{seat['id']}"
+                    
+                    with cols[col - 1]:
+                        if st.button(
+                            seat_label,
+                            key=button_key,
+                            type="primary" if is_available else "secondary",
+                            disabled=not is_available,
+                            use_container_width=True,
+                            help=f"座位: {seat['id']}\n状态: {'空闲' if is_available else '已预约'}"
+                        ):
+                            st.session_state.selected_seat = seat["id"]
+        
+        # 显示选中状态
+        real_seat_id = st.session_state.selected_seat
+        if real_seat_id:
+            st.success(f"✅ 已选择座位：{real_seat_id}")
+        else:
+            st.info("请点击上方座位网格选择座位（绿色按钮为可预约座位）")
     
     st.divider()
-    if st.button("提交预约", type="primary"):
+    if st.button("提交预约", type="primary", disabled=real_seat_id is None):
         # 二次校验是否选中座位
         if real_seat_id is None:
             st.error("❌ 请先选择有效座位！")
@@ -337,6 +363,7 @@ elif select_menu == "🚪 退出登录" and st.session_state.login_status:
         st.session_state.current_user = None
         st.session_state.selected_campus = None
         st.success("✅ 已退出登录")
+        st.success("📚 今日学习辛苦啦，欢迎下次再来图书馆努力学习！")
         st.rerun()
 
 # 未登录拦截

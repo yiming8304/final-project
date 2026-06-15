@@ -5,7 +5,7 @@
     "campus": "寸金校区",
     "row": 1,
     "col": 1,
-    "status": "available"
+    "status": "booked"
   },
   {
     "id": "寸金-A2",
@@ -77,7 +77,7 @@
     "campus": "寸金校区",
     "row": 1,
     "col": 2,
-    "status": "available"
+    "status": "booked"
   },
   {
     "id": "寸金-B3",
