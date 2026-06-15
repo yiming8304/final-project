@@ -1,0 +1,258 @@
+[
+  {
+    "id": "寸金-A1",
+    "area": "A区",
+    "campus": "寸金校区",
+    "row": 1,
+    "col": 1,
+    "status": "available"
+  },
+  {
+    "id": "寸金-A2",
+    "area": "A区",
+    "campus": "寸金校区",
+    "row": 1,
+    "col": 2,
+    "status": "available"
+  },
+  {
+    "id": "寸金-A3",
+    "area": "A区",
+    "campus": "寸金校区",
+    "row": 1,
+    "col": 3,
+    "status": "available"
+  },
+  {
+    "id": "寸金-A4",
+    "area": "A区",
+    "campus": "寸金校区",
+    "row": 1,
+    "col": 4,
+    "status": "available"
+  },
+  {
+    "id": "寸金-A5",
+    "area": "A区",
+    "campus": "寸金校区",
+    "row": 2,
+    "col": 1,
+    "status": "available"
+  },
+  {
+    "id": "寸金-A6",
+    "area": "A区",
+    "campus": "寸金校区",
+    "row": 2,
+    "col": 2,
+    "status": "available"
+  },
+  {
+    "id": "寸金-A7",
+    "area": "A区",
+    "campus": "寸金校区",
+    "row": 2,
+    "col": 3,
+    "status": "available"
+  },
+  {
+    "id": "寸金-A8",
+    "area": "A区",
+    "campus": "寸金校区",
+    "row": 2,
+    "col": 4,
+    "status": "available"
+  },
+  {
+    "id": "寸金-B1",
+    "area": "B区",
+    "campus": "寸金校区",
+    "row": 1,
+    "col": 1,
+    "status": "available"
+  },
+  {
+    "id": "寸金-B2",
+    "area": "B区",
+    "campus": "寸金校区",
+    "row": 1,
+    "col": 2,
+    "status": "available"
+  },
+  {
+    "id": "寸金-B3",
+    "area": "B区",
+    "campus": "寸金校区",
+    "row": 1,
+    "col": 3,
+    "status": "available"
+  },
+  {
+    "id": "寸金-B4",
+    "area": "B区",
+    "campus": "寸金校区",
+    "row": 1,
+    "col": 4,
+    "status": "available"
+  },
+  {
+    "id": "寸金-B5",
+    "area": "B区",
+    "campus": "寸金校区",
+    "row": 2,
+    "col": 1,
+    "status": "available"
+  },
+  {
+    "id": "寸金-B6",
+    "area": "B区",
+    "campus": "寸金校区",
+    "row": 2,
+    "col": 2,
+    "status": "available"
+  },
+  {
+    "id": "寸金-B7",
+    "area": "B区",
+    "campus": "寸金校区",
+    "row": 2,
+    "col": 3,
+    "status": "available"
+  },
+  {
+    "id": "寸金-B8",
+    "area": "B区",
+    "campus": "寸金校区",
+    "row": 2,
+    "col": 4,
+    "status": "available"
+  },
+  {
+    "id": "湖光-C1",
+    "area": "C区",
+    "campus": "湖光校区",
+    "row": 1,
+    "col": 1,
+    "status": "available"
+  },
+  {
+    "id": "湖光-C2",
+    "area": "C区",
+    "campus": "湖光校区",
+    "row": 1,
+    "col": 2,
+    "status": "available"
+  },
+  {
+    "id": "湖光-C3",
+    "area": "C区",
+    "campus": "湖光校区",
+    "row": 1,
+    "col": 3,
+    "status": "available"
+  },
+  {
+    "id": "湖光-C4",
+    "area": "C区",
+    "campus": "湖光校区",
+    "row": 1,
+    "col": 4,
+    "status": "available"
+  },
+  {
+    "id": "湖光-C5",
+    "area": "C区",
+    "campus": "湖光校区",
+    "row": 2,
+    "col": 1,
+    "status": "available"
+  },
+  {
+    "id": "湖光-C6",
+    "area": "C区",
+    "campus": "湖光校区",
+    "row": 2,
+    "col": 2,
+    "status": "available"
+  },
+  {
+    "id": "湖光-C7",
+    "area": "C区",
+    "campus": "湖光校区",
+    "row": 2,
+    "col": 3,
+    "status": "available"
+  },
+  {
+    "id": "湖光-C8",
+    "area": "C区",
+    "campus": "湖光校区",
+    "row": 2,
+    "col": 4,
+    "status": "available"
+  },
+  {
+    "id": "湖光-D1",
+    "area": "D区",
+    "campus": "湖光校区",
+    "row": 1,
+    "col": 1,
+    "status": "available"
+  },
+  {
+    "id": "湖光-D2",
+    "area": "D区",
+    "campus": "湖光校区",
+    "row": 1,
+    "col": 2,
+    "status": "available"
+  },
+  {
+    "id": "湖光-D3",
+    "area": "D区",
+    "campus": "湖光校区",
+    "row": 1,
+    "col": 3,
+    "status": "available"
+  },
+  {
+    "id": "湖光-D4",
+    "area": "D区",
+    "campus": "湖光校区",
+    "row": 1,
+    "col": 4,
+    "status": "available"
+  },
+  {
+    "id": "湖光-D5",
+    "area": "D区",
+    "campus": "湖光校区",
+    "row": 2,
+    "col": 1,
+    "status": "available"
+  },
+  {
+    "id": "湖光-D6",
+    "area": "D区",
+    "campus": "湖光校区",
+    "row": 2,
+    "col": 2,
+    "status": "available"
+  },
+  {
+    "id": "湖光-D7",
+    "area": "D区",
+    "campus": "湖光校区",
+    "row": 2,
+    "col": 3,
+    "status": "available"
+  },
+  {
+    "id": "湖光-D8",
+    "area": "D区",
+    "campus": "湖光校区",
+    "row": 2,
+    "col": 4,
+    "status": "available"
+  }
+]
